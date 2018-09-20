@@ -1,4 +1,4 @@
-Zip to Backup - Johann du Toit v0.0.1
+Zip to Backup - Johann du Toit v0.1.0
 =======================
 
 Takes a List of configured directories. Zips them then uploads to a FTP Server. Deleting any Records older than a configured stale variable.
