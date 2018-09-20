@@ -15,13 +15,15 @@ backupcfg.ini
 ========================
 
 You can configure a bunch of options for the Script:
+[default]:		the backup prefeix
 
 [folders]: 		Any Folders listed under [folders] will be zipped. These can be
 			networked files, local files, mounted drives anything just as long
 			as you have access to it.
 			For Example
 			[folders]
-			\\computer\myimportantfiles
+			folder1=\\computer\myimportantfiles
+			folder2=c:\Users|dir
 		
 [ftp]:			Configure FTP Details in this Section
 username:		Your FTP Server's Username to login with
@@ -31,10 +33,12 @@ keep_for_months:	After how many months is a zip seen as stale.
 
 Example Config File
 ------------------------
+[default]
+backup_prefix= backup_
+
 [folders]
-\\computer\myimportantfiles
-myotherfiles
-c:\Users\myuser\Documents
+folder1=\\computer\myimportantfiles
+folder2=c:\Users|dir
 
 [ftp]
 username=ftp_username
